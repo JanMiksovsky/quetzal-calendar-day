@@ -48,6 +48,8 @@ QuetzalCalendarDay = {
   },
 
   // Return the result of adding/subtracting a number of days to a date.
+  // TODO: There are surely gnarly date math bugs here. Ideally some time-geek
+  // library should be used for this calculation.
   offsetDateByDays: function( date, days ) {
     // Use noon hour for date math, since adding/subtracting multiples of 24 hours
     // starting from noon is guaranteed to end up on the correct date (although
